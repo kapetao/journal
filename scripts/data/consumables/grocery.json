@@ -1,8 +1,0 @@
-[
-  { "name": "Lemon", "section": "fruits" },
-  { "name": "Chicken breast", "section": "protein" },
-  { "name": "Pork loin", "section": "protein" },
-  { "name": "Bovine liver", "section": "protein" },
-  { "name": "Beetroot", "section": "vegetables" },
-  { "name": "Carrot", "section": "vegetables" }
-]

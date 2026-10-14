@@ -1,4 +1,4 @@
-// The consumables views must match scripts/data/consumables/*.json.
+// The consumables views must match scripts/data/wiki/consumables/*.json.
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { buildViews } from '../tools/sync-consumables.js';

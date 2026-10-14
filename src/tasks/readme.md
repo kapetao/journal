@@ -1,6 +1,6 @@
 # ✅ Tasks
 
-**What this is:** the recurring task playbooks, by category — generated from `scripts/data/tasks`. Edit the JSON, then run `npm run tasks`.
+**What this is:** the recurring task playbooks, by category — generated from `scripts/data/wiki/tasks`. Edit the JSON, then run `npm run tasks`.
 
 ## 🗂️ Categories
 

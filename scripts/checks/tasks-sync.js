@@ -1,4 +1,4 @@
-// The tasks views must match scripts/data/tasks/*.json.
+// The tasks views must match scripts/data/wiki/tasks/*.json.
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { buildViews } from '../tools/sync-tasks.js';

@@ -1,4 +1,4 @@
-// Regenerate src/consumables views from scripts/data/consumables/*.json.
+// Regenerate src/consumables views from scripts/data/wiki/consumables/*.json.
 //   npm run consumables
 import path from 'node:path';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
@@ -23,7 +23,7 @@ export async function buildViews(repoDir = REPO) {
   const views = {};
   for (const [dom, spec] of Object.entries(DOMAINS)) {
     let items;
-    try { items = JSON.parse(await readFile(path.join(repoDir, 'scripts', 'data', 'consumables', `${dom}.json`), 'utf8')); }
+    try { items = JSON.parse(await readFile(path.join(repoDir, 'scripts', 'data', 'wiki', 'consumables', `${dom}.json`), 'utf8')); }
     catch { continue; }
     const lines = [`# ${spec.title}`, ''];
     for (const section of spec.order) {

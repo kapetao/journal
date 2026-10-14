@@ -1,6 +1,6 @@
 # 🎬 Movies
 
-**What this is:** film candidate views by domain, generated from `scripts/data/playlists/movies.json`. Edit the JSON, then run `npm run playlists`.
+**What this is:** film candidate views by domain, generated from `scripts/data/wiki/playlists/movies.json`. Edit the JSON, then run `npm run playlists`.
 
 ## 🗂️ Files
 

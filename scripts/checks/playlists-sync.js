@@ -1,4 +1,4 @@
-// The playlists views must match the JSON source of truth (scripts/data/playlists).
+// The playlists views must match the JSON source of truth (scripts/data/wiki/playlists).
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { buildViews } from '../tools/sync-playlists.js';

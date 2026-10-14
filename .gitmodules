@@ -1,0 +1,3 @@
+[submodule "scripts/data"]
+	path = scripts/data
+	url = https://github.com/kapetim/database.git

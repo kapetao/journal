@@ -1,6 +1,6 @@
 # 🛒 Consumables
 
-**What this is:** the recurring home purchases — a reminder of **which items** to keep in supply, not a ledger. Amounts and prices are situational and calculated when needed; only the item list lives here (generated from `scripts/data/consumables`; edit the JSON, then run `npm run consumables`).
+**What this is:** the recurring home purchases — a reminder of **which items** to keep in supply, not a ledger. Amounts and prices are situational and calculated when needed; only the item list lives here (generated from `scripts/data/wiki/consumables`; edit the JSON, then run `npm run consumables`).
 
 ## 🧭 Principle
 

@@ -1,11 +1,11 @@
-// Regenerate src/tasks views from scripts/data/tasks/*.json.
+// Regenerate src/tasks views from scripts/data/wiki/tasks/*.json.
 //   npm run tasks
 import path from 'node:path';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 
 const here = import.meta.dirname;
 const REPO = process.env.REPO_DIR || path.resolve(here, '..', '..');
-const DATA = path.join(REPO, 'scripts', 'data', 'tasks');
+const DATA = path.join(REPO, 'scripts', 'data', 'wiki', 'tasks');
 const OUT = path.join(REPO, 'src', 'tasks');
 
 const CATS = { government: '🏛️ Government', health: '🏥 Health', housekeeping: '🧹 Housekeeping' };
@@ -16,7 +16,7 @@ export async function buildViews(repoDir = REPO) {
   const views = {};
   for (const [cat, heading] of Object.entries(CATS)) {
     let tasks;
-    try { tasks = JSON.parse(await readFile(path.join(repoDir, 'scripts', 'data', 'tasks', `${cat}.json`), 'utf8')); }
+    try { tasks = JSON.parse(await readFile(path.join(repoDir, 'scripts', 'data', 'wiki', 'tasks', `${cat}.json`), 'utf8')); }
     catch { continue; }
     const lines = [`# ${heading}`, '', '## 🗂️ Tasks', '', TBL,
       '| # | Task | Recurrence | Priority | Steps |', '| --- | --- | --- | --- | --- |'];

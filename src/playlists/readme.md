@@ -1,6 +1,6 @@
 # 🎬 Playlists
 
-**Eyes + ears — what you watch and listen to.** Media you consume, cataloged by type. The movies/series views are **generated** from the JSON source of truth in `scripts/data/playlists/`; the rest are hand-maintained data tables.
+**Eyes + ears — what you watch and listen to.** Media you consume, cataloged by type. The movies/series views are **generated** from the JSON source of truth in `scripts/data/wiki/playlists/`; the rest are hand-maintained data tables.
 
 ## 🗂️ Contents
 
@@ -16,7 +16,7 @@ Every content file starts with its `# <H1>` and then its data tables. Tables are
 
 ## 🍿 Entertainment
 
-Films and series live under `entertainment/`, by genre (plus `animation/west` and `animation/east`); music is `entertainment/music/`. Each genre view uses the four-table template — **🧭 Index → ⏳ In progress → 🔴 Not started → 📚 Catalog** — and is generated from `scripts/data/playlists`; edit the JSON, not the view, then run `npm run playlists`. See [entertainment/readme.md](entertainment/readme.md).
+Films and series live under `entertainment/`, by genre (plus `animation/west` and `animation/east`); music is `entertainment/music/`. Each genre view uses the four-table template — **🧭 Index → ⏳ In progress → 🔴 Not started → 📚 Catalog** — and is generated from `scripts/data/wiki/playlists`; edit the JSON, not the view, then run `npm run playlists`. See [entertainment/readme.md](entertainment/readme.md).
 
 ## 🎧 Audiobooks
 
@@ -47,7 +47,7 @@ Folders: `standard/` · `remix/` · `instrumental/` · `soundtrack/` · `live/` 
 
 ## 🎙️ Topics
 
-Podcasts are filed by topic — `news/` · `finance/` · `tech/` · `learning/` · `culture/` · `sports/` · `health/` — generated from `scripts/data/playlists/podcasts.json` (edit the JSON, then run `npm run playlists`). Each topic readme holds a `| Podcast | Subs | Avg | Find on |` table.
+Podcasts are filed by topic — `news/` · `finance/` · `tech/` · `learning/` · `culture/` · `sports/` · `health/` — generated from `scripts/data/wiki/playlists/podcasts.json` (edit the JSON, then run `npm run playlists`). Each topic readme holds a `| Podcast | Subs | Avg | Find on |` table.
 
 ## 🔊 Sounds
 

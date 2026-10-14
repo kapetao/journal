@@ -1,6 +1,6 @@
 # 📺 Series
 
-**What this is:** series candidate views by domain, generated from `scripts/data/playlists/series.json`. Edit the JSON, then run `npm run playlists`.
+**What this is:** series candidate views by domain, generated from `scripts/data/wiki/playlists/series.json`. Edit the JSON, then run `npm run playlists`.
 
 ## 🗂️ Files
 

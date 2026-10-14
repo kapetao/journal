@@ -15,4 +15,4 @@
 ## 🔗 Related
 
 - [../readme.md](../readme.md) — playlists index
-- `scripts/data/playlists` — the JSON source of truth (movies · series)
+- `scripts/data/wiki/playlists` — the JSON source of truth (movies · series)

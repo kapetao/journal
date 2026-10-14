@@ -1,4 +1,4 @@
-// Regenerate every playlists view from the JSON source of truth (scripts/data/playlists).
+// Regenerate every playlists view from the JSON source of truth (scripts/data/wiki/playlists).
 // `buildViews` is shared with the sync check so a stale view fails CI.
 import path from 'node:path';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
@@ -44,7 +44,7 @@ function render(h1, entries) {
 }
 
 export async function buildViews(repoDir = REPO) {
-  const DATA = path.join(repoDir, 'scripts', 'data', 'playlists');
+  const DATA = path.join(repoDir, 'scripts', 'data', 'wiki', 'playlists');
   const load = async (f) => JSON.parse(await readFile(path.join(DATA, f), 'utf8'));
   const movies = await load('movies.json');
   const series = await load('series.json');
